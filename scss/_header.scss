@@ -1,0 +1,44 @@
+@use "basic";
+
+//logo a menu vedle sebe
+.header{
+    display: flex;
+    justify-content: space-between;
+	align-items: center;
+    margin-left: auto;
+	margin-right: auto; 
+    width: 1800px;
+  
+
+    &__logo{
+        padding-top: 20px;
+        padding-left: 60px;
+        width: 340px;
+    }
+
+}
+
+.menu{
+    &__list{
+        padding:0;
+        margin:20px 200px;
+        display: flex;
+        list-style: none;
+        
+    }
+
+    &__link{
+        text-decoration: none;
+        padding: 10px 20px;
+        color: basic.$c-primary-text;
+        border-radius: 15px;
+        font-family: basic.$font-nav;
+        font-weight: bold;
+        font-size: basic.$size-menu;
+
+        &:hover{
+            background-color: basic.$c-button-hoover;
+            color: white;
+        }
+    }
+}

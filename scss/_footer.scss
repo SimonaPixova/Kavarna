@@ -1,0 +1,36 @@
+@use "basic";
+
+.footer{
+
+    &__grid{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        justify-items: center;
+        padding: 40px;
+        background-color: basic.$c-primary-background; 
+        color: white;
+    }
+
+    &__grid-column{
+        grid-column: span 1;
+    
+    }
+
+    &__copyright{
+
+        color:basic.$c-secondary-text;
+        font-size: 16px;
+        font-weight: bold;
+        text-align: center;
+        padding: 15px; 
+
+    }
+
+}
+
+   
+
+    
+
+   

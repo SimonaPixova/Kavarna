@@ -1,0 +1,185 @@
+@charset "UTF-8";
+/*
+Breakpointy
+Mobil   0 - 539px
+Tablet  540px - 959px (čti jako 540px a víc)
+PC      960px a víc
+*/
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1800px;
+}
+.header__logo {
+  padding-top: 20px;
+  padding-left: 60px;
+  width: 340px;
+}
+
+.menu__list {
+  padding: 0;
+  margin: 20px 200px;
+  display: flex;
+  list-style: none;
+}
+.menu__link {
+  text-decoration: none;
+  padding: 10px 20px;
+  color: #242424;
+  border-radius: 15px;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 22px;
+}
+.menu__link:hover {
+  background-color: #D19C1D;
+  color: white;
+}
+
+.hero__image {
+  width: 100%;
+  height: 480px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: none;
+}
+
+.hero__image--homepage {
+  background-image: url(./../images/hero-homepage.jpg);
+}
+
+.hero__image--hero-onas {
+  background-image: url(./../images/hero-onas.jpg);
+}
+
+.hero__image--nabidka {
+  background-image: url(./../images/hero-nabidka.jpg);
+}
+
+.hero__image--fotogalerie {
+  background-image: url(./../images/hero-fotogalerie2.jpg);
+}
+
+.hero__image--akce {
+  background-image: url(./../images/hero-akce.jpg);
+}
+
+.hero__image--kontakt {
+  background-image: url(./../images/hero-kontakt.jpg);
+}
+
+.footer__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  justify-items: center;
+  padding: 40px;
+  background-color: #2F2D2E;
+  color: white;
+}
+.footer__grid-column {
+  grid-column: span 1;
+}
+.footer__copyright {
+  color: #D19C1D;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  padding: 15px;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, ::before, ::after {
+  box-sizing: inherit;
+}
+
+/*============================================================================================================*/
+body {
+  margin: 0;
+  line-height: 1.5;
+  color: #242424;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 16px;
+}
+
+h1 {
+  font-size: 48px;
+  font-family: "Gentium Book Basic", serif;
+  text-align: center;
+}
+
+h2 {
+  font-size: 28px;
+  font-family: "Gentium Book Basic", serif;
+}
+
+h3 {
+  font-size: 22px;
+  font-family: "Gentium Book Basic", serif;
+}
+
+a {
+  color: #D19C1D;
+}
+
+section {
+  margin-bottom: 100px;
+}
+
+/*=========section homepage-about"==========*/
+.homepage-about {
+  width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  justify-items: center;
+  padding: 60px;
+}
+
+.card__content {
+  padding: 20px;
+  text-align: center;
+}
+
+.fas {
+  font-size: 60px;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/*=========section homepage-akce"==========*/
+.homepage-akce {
+  width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.glide {
+  background-color: #2F2D2E;
+}
+
+.card-slider {
+  padding: 40px;
+  border-radius: 6px;
+  background-color: white;
+  margin: 60px;
+}
+
+.glide__slide img {
+  width: 500px;
+  border-radius: 5px;
+  display: block;
+  margin: 0 auto;
+}/*# sourceMappingURL=style.css.map */

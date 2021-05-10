@@ -1,0 +1,64 @@
+Hnědá
+503B31
+705D56
+F2E9DC
+
+Onyx na písmo
+444545
+
+
+CFB9A5 - khaki
+
+695958-umber
+BCAF9C - khaki 2  
+
+472C1B - bistre (tmavá)
+D19C1D - goldenrod
+2F2D2E - Jet (PATIČKA(
+775144 - coffee
+D4AA7D - burlywood 
+
+FOND - nadpisy
+Rokkit
+Goudy Bookletter 1911
+DM Serif Display
+Gentium Book Basic (regular 400 a bold 700) - <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Basic:wght@400;700&display=swap" rel="stylesheet">
+
+font-family: 'Gentium Book Basic', serif;
+
+FOND - text 
+PT Sans
+Nunito
+Nunito Sans (regular 00, regular italic 400 bold 700)- <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Basic:wght@400;700&family=Nunito+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+font-family: 'Gentium Book Basic', serif;
+font-family: 'Nunito Sans', sans-serif;
+
+
+Merriweather (regular 400. regular 400 italic, semi-bold 600) - <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Basic:wght@400;700&family=Merriweather+Sans:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+
+font-family: 'Gentium Book Basic', serif;
+font-family: 'Merriweather Sans', sans-serif;
+
+
+Jost (regular 400, reg.400 italic, semi-bold 600) - <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Basic:wght@400;700&family=Jost:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+
+font-family: 'Gentium Book Basic', serif;
+font-family: 'Jost', sans-serif;
+
+
+Copy this HTML to use this icon:
+<i class="fas fa-coffee"></i>
+<i class="fas fa-store"></i>
+<i class="fas fa-book-reader"></i>
+<i class="fas fa-cheese"></i>
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+font-family: 'Poppins', sans-serif;
+
+

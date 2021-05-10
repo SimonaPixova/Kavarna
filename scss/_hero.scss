@@ -1,0 +1,39 @@
+@use "basic";
+
+//Základní nastavení společné pro všechny obrázky v hero sekci
+.hero__image{
+    width: 100%;
+    height: 480px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: none;
+}
+
+.hero__image--homepage{
+    background-image: url(./../images/hero-homepage.jpg);
+}
+
+.hero__image--hero-onas{
+    background-image: url(./../images/hero-onas.jpg);
+    
+}
+
+.hero__image--nabidka{
+    background-image: url(./../images/hero-nabidka.jpg);
+    
+}
+
+.hero__image--fotogalerie{
+    background-image: url(./../images/hero-fotogalerie2.jpg);
+    
+}
+
+
+
+.hero__image--akce{
+    background-image: url(./../images/hero-akce.jpg);
+}
+
+.hero__image--kontakt{
+    background-image: url(./../images/hero-kontakt.jpg);
+}

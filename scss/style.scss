@@ -1,0 +1,114 @@
+@use "basic";
+@use "header";
+@use "hero";
+@use "footer";
+
+html { box-sizing: border-box; }
+*, ::before, ::after { box-sizing: inherit; }
+
+
+/*============================================================================================================*/
+
+body{
+    margin: 0;
+    line-height: 1.5;
+	color: basic.$c-primary-text;
+    font-family: basic.$font-basic;
+    font-size: basic.$size-default;
+}
+
+h1{
+    font-size: basic.$size-title1;
+    font-family: basic.$font-special;
+    text-align: center;
+
+}
+
+h2{
+    font-size: basic.$size-title2;
+    font-family: basic.$font-special; 
+   
+    
+}
+
+h3{
+    font-size: basic.$size-title3;
+    font-family: basic.$font-special; 
+}
+
+a{
+    color: basic.$c-secondary-text;
+}
+
+section{
+    margin-bottom: 100px;
+}
+
+
+
+
+/*=========section homepage-about"==========*/
+
+.homepage-about{
+    width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.card-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    justify-items: center;//nefunguje
+    padding: 60px;
+        //background-color: basic.$c-primary-background; 
+        //color: white;
+}
+
+
+.card__content{
+    padding: 20px;
+    text-align: center;
+}
+
+.fas{
+    font-size: 60px;
+    display: block; //zarovnání obrázku na střed
+    margin: 0 auto; //zarovnání obrázku na střed
+    text-align: center;//zarovnání obrázku na střed
+    } 
+
+
+
+
+
+
+/*=========section homepage-akce"==========*/
+.homepage-akce{
+    width: 1400px;
+	margin-left: auto;
+	margin-right: auto;
+    
+}
+
+.glide{
+    background-color: basic.$c-primary-background;
+}
+
+.card-slider{
+    padding: 40px;
+    border-radius: 6px;
+    background-color: white;
+    margin: 60px;
+    
+}
+
+.glide__slide img{
+    width: 500px;
+    border-radius: 5px;
+    display: block;
+    margin: 0 auto;
+
+}
+
