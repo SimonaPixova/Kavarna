@@ -91,6 +91,97 @@ PC      960px a víc
   padding: 15px;
 }
 
+.card-general {
+  border: 1px solid silver;
+  padding: 40px;
+  margin-bottom: 40px;
+  background-color: #2F2D2E;
+  width: 50%;
+}
+
+.card-general__content {
+  background-color: white;
+  padding: 40px;
+  background-color: #2F2D2E;
+  color: white;
+  text-align: center;
+}
+
+.card-general__images img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+@media screen and (min-width: 900px) {
+  .card-general {
+    display: flex;
+    background-color: white;
+    align-items: center;
+    width: 100%;
+  }
+
+  .card-general__content {
+    background-color: white;
+    color: #242424;
+    text-align: left;
+  }
+
+  .card-general__images {
+    width: 1000px;
+  }
+
+  .card-general__images img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    margin-bottom: 20px;
+    border-radius: 10px;
+  }
+}
+.grid__item {
+  border: 2px solid silver;
+  margin-bottom: 40px;
+  width: 440px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.grid__item-img {
+  display: block;
+  width: 100%;
+  height: 500px;
+}
+.grid__item-content {
+  padding: 20px;
+  text-align: center;
+  background-color: #2F2D2E;
+  color: white;
+  height: 260px;
+}
+
+.kava,
+.dezerty {
+  width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: white;
+  color: #242424;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 5px;
+}
+.button:hover {
+  background-color: #D19C1D;
+}
+
 html {
   box-sizing: border-box;
 }
@@ -147,7 +238,16 @@ section {
   padding: 60px;
 }
 
-.card__content {
+/*.card-grid__template{
+    border: 1px solid silver;
+    border-radius: 10px;
+    width: 50%;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+}*/
+.card-grid__content {
   padding: 20px;
   text-align: center;
 }
@@ -159,6 +259,19 @@ section {
   text-align: center;
 }
 
+/*
+@media screen and (min-width: 540px){
+    .card-grid{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+        justify-items: center;//nefunguje
+        padding: 60px;
+        //background-color: basic.$c-primary-background; 
+        //color: white;
+    }
+
+*/
 /*=========section homepage-akce"==========*/
 .homepage-akce {
   width: 1400px;

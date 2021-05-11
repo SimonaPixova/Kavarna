@@ -2,6 +2,8 @@
 @use "header";
 @use "hero";
 @use "footer";
+@use "onas";
+@use "nabidka";
 
 html { box-sizing: border-box; }
 *, ::before, ::after { box-sizing: inherit; }
@@ -55,21 +57,32 @@ section{
     margin-right: auto;
 }
 
-
 .card-grid{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
     justify-items: center;//nefunguje
     padding: 60px;
-        //background-color: basic.$c-primary-background; 
-        //color: white;
+    //background-color: basic.$c-primary-background; 
+    //color: white;
 }
 
+/*.card-grid__template{
+    border: 1px solid silver;
+    border-radius: 10px;
+    width: 50%;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+}*/
 
-.card__content{
+
+.card-grid__content{
     padding: 20px;
     text-align: center;
+
+    
 }
 
 .fas{
@@ -78,6 +91,21 @@ section{
     margin: 0 auto; //zarovnání obrázku na střed
     text-align: center;//zarovnání obrázku na střed
     } 
+/*
+@media screen and (min-width: 540px){
+    .card-grid{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+        justify-items: center;//nefunguje
+        padding: 60px;
+        //background-color: basic.$c-primary-background; 
+        //color: white;
+    }
+
+*/
+
+
 
 
 
