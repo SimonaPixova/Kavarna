@@ -6,7 +6,9 @@
     padding: 40px;
     margin-bottom: 40px;
     background-color: basic.$c-primary-background;
-    width: 50%;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .card-general__content{
@@ -25,7 +27,7 @@
     border-radius: 10px;
 }
 
-@media screen and(min-width: 900px){
+@media screen and(min-width: 680px){
     .card-general{
         display:flex;
         background-color: white;
@@ -37,6 +39,7 @@
     background-color: white;
     color: basic.$c-primary-text;
     text-align: left;
+  
     
     }
 
@@ -50,5 +53,11 @@
         max-width: 100%;
         margin-bottom: 20px;
         border-radius: 10px;
+    }
+
+    .about-content{
+        width: 1400px;
+        margin-left: auto;
+        margin-right: auto;
     }
 }

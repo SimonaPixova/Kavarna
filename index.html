@@ -14,10 +14,17 @@
     <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Basic:wght@400;700&family=Nunito+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    
     <link href="C:\Users\simon\OneDrive\HTML a CSS\fontawesome-free-5.15.3-web\fontawesome-free-5.15.3-web\css\all.css" rel="stylesheet">
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">   
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montez&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
 
     <!-- Slider -->
     <link rel="stylesheet" href="css/glide.core.min.css">
@@ -30,6 +37,10 @@
         <img class="header__logo" src="images/logo2.svg" alt="logo kavárny">
 
         <nav class="menu">
+            <input type="checkbox" class="menu__checkbox" id="menu-checkbox">
+
+            <label for="menu-checkbox" class="menu__toggler"><span class="tog">☰</span></label>
+
             <ul class="menu__list">
                 <li class="menu__item"><a href="/" class="menu__link">HOME</a></li>
                 <li class="menu__item"><a href="/" class="menu__link">O NÁS</a></li>
@@ -51,7 +62,7 @@
         
         <section class="homepage-about">
 
-            <h1>CO NABÍZÍME</h1>
+            <h1>Co nabízíme</h1>
 
             
 
@@ -68,51 +79,51 @@
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati aliquid possimus quo consequatur saepe nisi vitae. Tempora facere sint libero.</p>
                     </div>
 
+                </div>
+
+                <div class="card-grid__template">
+
+                    <div class="card-grid__icon">
+                        <i class="fas fa-cheese"></i>
                     </div>
 
-                    <div class="card-grid__template">
-
-                        <div class="card-grid__icon">
-                            <i class="fas fa-cheese"></i>
-                        </div>
-
-                        <div class="card-grid__content">
-                            <h2>Domácí zákusky</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati aliquid possimus quo consequatur saepe nisi vitae. Tempora facere sint libero.</p>
-                        </div>
-
+                    <div class="card-grid__content">
+                        <h2>Domácí zákusky</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati aliquid possimus quo consequatur saepe nisi vitae. Tempora facere sint libero.</p>
                     </div>
 
-                    <div class="card-grid__template">
-                        <div class="card-grid__icon">
-                            <i class="fas fa-store"></i>
-                        </div>
+                 </div>
 
-                        <div class="card-grid__content">
-                            <h2>Příjemné prostředí</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati aliquid possimus quo consequatur saepe nisi vitae. Tempora facere sint libero.</p>                   
-                        </div>
-
+                 <div class="card-grid__template">
+                    <div class="card-grid__icon">
+                        <i class="fas fa-store"></i>
                     </div>
 
-                    <div class="card-grid__template">
+                    <div class="card-grid__content">
+                        <h2>Příjemné prostředí</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati aliquid possimus quo consequatur saepe nisi vitae. Tempora facere sint libero.</p>                   
+                     </div>
 
-                        <div class="card-grid__icon">
-                            <i class="fas fa-book-reader"></i>
-                        </div>
-                        
-                        <div class="card-grid__content">
-                            <h2>Potravu pro duši</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati aliquid possimus quo consequatur saepe nisi vitae. Tempora facere sint libero.</p>
-                        </div>
+                 </div>
 
+                <div class="card-grid__template">
+
+                    <div class="card-grid__icon">
+                        <i class="fas fa-book-reader"></i>
                     </div>
+
+                    <div class="card-grid__content">
+                        <h2>Potravu pro duši</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati aliquid possimus quo consequatur saepe nisi vitae. Tempora facere sint libero.</p>
+                    </div>
+
+                </div>
                
             </div>
         </section>
 
         <section class="homepage-akce">
-            <h1>AKCE</h1>
+            <h1>Akce</h1>
 
             <div class="glide">
                 <div class="glide__track" data-glide-el="track">

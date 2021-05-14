@@ -21,7 +21,7 @@ body{
 
 h1{
     font-size: basic.$size-title1;
-    font-family: basic.$font-special;
+    font-family: basic.$font-title;//basic.$font-special;
     text-align: center;
 
 }
@@ -52,12 +52,47 @@ section{
 /*=========section homepage-about"==========*/
 
 .homepage-about{
+
+    @media screen and (min-width: 1000px) {
     width: 1400px;
     margin-left: auto;
     margin-right: auto;
+       
+    }
 }
 
 .card-grid{
+
+    &__template{
+        border: 1px solid silver;
+        box-shadow: 1px 2px 3px #808080;
+        padding: 20px;
+        margin-bottom: 40px;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+
+        @media screen and (min-width: 1000px){
+            border: 0;
+            box-shadow: none;
+            padding: 0;
+            margin: 0;
+            width: 100%;
+        }    
+
+        
+    }
+
+    &__content{
+        padding: 20px;
+        text-align: center;
+    
+        
+    }
+
+
+
+    @media screen and (min-width: 1000px){
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
@@ -65,31 +100,16 @@ section{
     padding: 60px;
     //background-color: basic.$c-primary-background; 
     //color: white;
+    }
 }
 
-/*.card-grid__template{
-    border: 1px solid silver;
-    border-radius: 10px;
-    width: 50%;
-    margin-bottom: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 20px;
-}*/
-
-
-.card-grid__content{
-    padding: 20px;
-    text-align: center;
-
-    
-}
 
 .fas{
     font-size: 60px;
     display: block; //zarovnání obrázku na střed
     margin: 0 auto; //zarovnání obrázku na střed
     text-align: center;//zarovnání obrázku na střed
+    padding-top: 20px;
     } 
 /*
 @media screen and (min-width: 540px){

@@ -2,43 +2,103 @@
 
 //logo a menu vedle sebe
 .header{
-    display: flex;
-    justify-content: space-between;
-	align-items: center;
-    margin-left: auto;
-	margin-right: auto; 
-    width: 1800px;
+
+
+    @media screen and (min-width: 1000px) {
+        margin:20px 200px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: white;
+        margin-left: auto;
+        margin-right: auto; 
+        width: 1800px; 
+    }
   
 
     &__logo{
-        padding-top: 20px;
-        padding-left: 60px;
+
         width: 340px;
+        margin-top: 20px;
+        margin-left: 40px;
+      
     }
-
-}
-
-.menu{
-    &__list{
-        padding:0;
-        margin:20px 200px;
-        display: flex;
-        list-style: none;
         
     }
 
+
+
+.menu{
+    &__checkbox{
+      position: absolute;
+      left: -9999px; 
+    }
+
+
+
+    &__list{
+        display: none;
+        padding:0;
+        margin:0;
+        list-style: none;
+        background-color: basic.$c-primary-background;
+        
+        
+
+        @media screen and (min-width: 1000px) {
+            margin:20px 200px;
+            display: flex;
+            background-color: white;
+        }
+        
+    }
+
+    &__item{
+        border-bottom: 1px solid white;
+
+        @media screen and (min-width: 1000px) {
+            border-bottom: 0;
+        }
+    }
+
     &__link{
+        display: block;
         text-decoration: none;
         padding: 10px 20px;
-        color: basic.$c-primary-text;
+        color: white;
         border-radius: 15px;
         font-family: basic.$font-nav;
-        font-weight: bold;
+        font-weight: normal;
         font-size: basic.$size-menu;
+
+        @media screen and (min-width: 1000px) {
+            color: basic.$c-primary-text;
+            font-weight: bold;
+        }
 
         &:hover{
             background-color: basic.$c-button-hoover;
             color: white;
         }
+    }
+
+    @media screen and(max-width: 999px){
+        .menu__checkbox:checked ~ .menu__list {
+        display: block;      
+        }
+    }
+
+    .menu__toggler{
+        cursor: pointer;
+
+        @media screen and (min-width: 1000px) {
+            display: none;
+        }
+    }
+
+    .tog{
+        font-weight: bold;
+        font-size: 38px;
+        margin-left: 40px;
     }
 }
