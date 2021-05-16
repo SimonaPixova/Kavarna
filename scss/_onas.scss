@@ -2,18 +2,19 @@
 
 
 .card-general{
-    border: 1px solid silver;
     padding: 40px;
     margin-bottom: 40px;
     background-color: basic.$c-primary-background;
+    border-radius: 10px;
     width: 80%;
     margin-left: auto;
     margin-right: auto;
+    //box-shadow: 1px 2px 2px #dbdbdb;
 }
 
 .card-general__content{
     background-color: white;
-    padding: 40px;
+    padding: 20px;
     background-color: basic.$c-primary-background;
     color: white;
     text-align: center;
@@ -22,13 +23,13 @@
 .card-general__images img{
     display: block;
     margin: 0 auto;
-    max-width: 100%;
-    margin-bottom: 20px;
+    max-width: 80%;
     border-radius: 10px;
 }
 
-@media screen and(min-width: 680px){
+@media screen and(min-width: 1000px){
     .card-general{
+        border: 1px solid silver;
         display:flex;
         background-color: white;
         align-items: center;
@@ -36,28 +37,29 @@
     }
 
     .card-general__content{
-    background-color: white;
-    color: basic.$c-primary-text;
-    text-align: left;
-  
-    
+        background-color: white;
+        color: basic.$c-primary-text;
+        text-align: left;
+        margin-left: 40px;
+        padding: 0;   
     }
 
     .card-general__images{
-        width: 1000px;
+       min-width: 40%;   
     }
 
     .card-general__images img{
         display: block;
         margin: 0 auto;
         max-width: 100%;
-        margin-bottom: 20px;
+        margin: 0;
         border-radius: 10px;
     }
 
     .about-content{
-        width: 1400px;
+        width: 90%;
         margin-left: auto;
         margin-right: auto;
     }
 }
+

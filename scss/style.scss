@@ -23,12 +23,15 @@ h1{
     font-size: basic.$size-title1;
     font-family: basic.$font-title;//basic.$font-special;
     text-align: center;
+    margin-top: 0;
+    margin-bottom: 40px;
 
 }
 
 h2{
     font-size: basic.$size-title2;
     font-family: basic.$font-special; 
+    margin-top: 0;
    
     
 }
@@ -43,7 +46,7 @@ a{
 }
 
 section{
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
 
 
@@ -58,6 +61,12 @@ section{
     margin-left: auto;
     margin-right: auto;
        
+    }
+}
+
+.glide{
+    @media screen and (max-width: 999px){
+    display: none;
     }
 }
 
@@ -111,52 +120,46 @@ section{
     text-align: center;//zarovnání obrázku na střed
     padding-top: 20px;
     } 
-/*
-@media screen and (min-width: 540px){
-    .card-grid{
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 10px;
-        justify-items: center;//nefunguje
-        padding: 60px;
-        //background-color: basic.$c-primary-background; 
-        //color: white;
-    }
-
-*/
-
-
-
-
-
-
 
 
 /*=========section homepage-akce"==========*/
 .homepage-akce{
-    width: 1400px;
-	margin-left: auto;
-	margin-right: auto;
-    
-}
+
+    @media screen and (min-width: 1000px) {
+        width: 1400px;
+        margin-left: auto;
+        margin-right: auto;
+        }
+    }
 
 .glide{
     background-color: basic.$c-primary-background;
+
 }
 
 .card-slider{
+    
     padding: 40px;
     border-radius: 6px;
     background-color: white;
-    margin: 60px;
+    margin: 40px;
     
 }
 
+.card-slider__content{
+    padding:60px 100px 20px 100px;
+}
+
+
+
 .glide__slide img{
+    
     width: 500px;
     border-radius: 5px;
     display: block;
     margin: 0 auto;
 
 }
+
+
 

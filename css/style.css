@@ -7,19 +7,18 @@ PC      960px a víc
 */
 @media screen and (min-width: 1000px) {
   .header {
-    margin: 20px 200px;
+    margin-top: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: white;
     margin-left: auto;
     margin-right: auto;
-    width: 1800px;
+    width: 100%;
   }
 }
 .header__logo {
-  width: 340px;
-  margin-top: 20px;
+  width: 320px;
   margin-left: 40px;
 }
 
@@ -36,7 +35,7 @@ PC      960px a víc
 }
 @media screen and (min-width: 1000px) {
   .menu__list {
-    margin: 20px 200px;
+    margin-right: 40px;
     display: flex;
     background-color: white;
   }
@@ -52,17 +51,18 @@ PC      960px a víc
 .menu__link {
   display: block;
   text-decoration: none;
-  padding: 10px 20px;
+  padding: 10px 10px;
   color: white;
-  border-radius: 15px;
+  border-radius: 0px;
   font-family: "Poppins", sans-serif;
   font-weight: normal;
-  font-size: 22px;
+  font-size: 20px;
 }
 @media screen and (min-width: 1000px) {
   .menu__link {
     color: #242424;
     font-weight: bold;
+    border-radius: 15px;
   }
 }
 .menu__link:hover {
@@ -85,7 +85,9 @@ PC      960px a víc
 .menu .tog {
   font-weight: bold;
   font-size: 38px;
-  margin-left: 40px;
+  position: absolute;
+  right: 50px;
+  top: 65px;
 }
 
 .hero__image {
@@ -133,6 +135,7 @@ PC      960px a víc
   padding: 40px;
   background-color: #2F2D2E;
   color: white;
+  justify-items: center;
 }
 .footer__grid-column {
   grid-column: span 1;
@@ -146,10 +149,10 @@ PC      960px a víc
 }
 
 .card-general {
-  border: 1px solid silver;
   padding: 40px;
   margin-bottom: 40px;
   background-color: #2F2D2E;
+  border-radius: 10px;
   width: 80%;
   margin-left: auto;
   margin-right: auto;
@@ -157,7 +160,7 @@ PC      960px a víc
 
 .card-general__content {
   background-color: white;
-  padding: 40px;
+  padding: 20px;
   background-color: #2F2D2E;
   color: white;
   text-align: center;
@@ -166,13 +169,13 @@ PC      960px a víc
 .card-general__images img {
   display: block;
   margin: 0 auto;
-  max-width: 100%;
-  margin-bottom: 20px;
+  max-width: 80%;
   border-radius: 10px;
 }
 
-@media screen and (min-width: 680px) {
+@media screen and (min-width: 1000px) {
   .card-general {
+    border: 1px solid silver;
     display: flex;
     background-color: white;
     align-items: center;
@@ -183,22 +186,24 @@ PC      960px a víc
     background-color: white;
     color: #242424;
     text-align: left;
+    margin-left: 40px;
+    padding: 0;
   }
 
   .card-general__images {
-    width: 1000px;
+    min-width: 40%;
   }
 
   .card-general__images img {
     display: block;
     margin: 0 auto;
     max-width: 100%;
-    margin-bottom: 20px;
+    margin: 0;
     border-radius: 10px;
   }
 
   .about-content {
-    width: 1400px;
+    width: 90%;
     margin-left: auto;
     margin-right: auto;
   }
@@ -211,7 +216,6 @@ PC      960px a víc
   }
 }
 .grid__item {
-  border: 2px solid silver;
   margin-bottom: 40px;
   width: 440px;
   margin-left: auto;
@@ -219,7 +223,7 @@ PC      960px a víc
 }
 @media screen and (min-width: 680px) {
   .grid__item {
-    flex: 0 0 calc((100% - 40px) / 3);
+    flex: 0 0 calc((100% - 40px) / 2);
   }
 }
 @media screen and (min-width: 1000px) {
@@ -294,11 +298,14 @@ h1 {
   font-size: 64px;
   font-family: "Sacramento", cursive;
   text-align: center;
+  margin-top: 0;
+  margin-bottom: 40px;
 }
 
 h2 {
-  font-size: 28px;
+  font-size: 26px;
   font-family: "Gentium Book Basic", serif;
+  margin-top: 0;
 }
 
 h3 {
@@ -311,7 +318,7 @@ a {
 }
 
 section {
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 
 /*=========section homepage-about"==========*/
@@ -320,6 +327,12 @@ section {
     width: 1400px;
     margin-left: auto;
     margin-right: auto;
+  }
+}
+
+@media screen and (max-width: 999px) {
+  .glide {
+    display: none;
   }
 }
 
@@ -363,24 +376,13 @@ section {
   padding-top: 20px;
 }
 
-/*
-@media screen and (min-width: 540px){
-    .card-grid{
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 10px;
-        justify-items: center;//nefunguje
-        padding: 60px;
-        //background-color: basic.$c-primary-background; 
-        //color: white;
-    }
-
-*/
 /*=========section homepage-akce"==========*/
-.homepage-akce {
-  width: 1400px;
-  margin-left: auto;
-  margin-right: auto;
+@media screen and (min-width: 1000px) {
+  .homepage-akce {
+    width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .glide {
@@ -391,7 +393,11 @@ section {
   padding: 40px;
   border-radius: 6px;
   background-color: white;
-  margin: 60px;
+  margin: 40px;
+}
+
+.card-slider__content {
+  padding: 60px 100px 20px 100px;
 }
 
 .glide__slide img {

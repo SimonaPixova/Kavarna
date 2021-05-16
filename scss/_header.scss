@@ -3,25 +3,22 @@
 //logo a menu vedle sebe
 .header{
 
-
     @media screen and (min-width: 1000px) {
-        margin:20px 200px;
+        margin-top:20px;
         display: flex;
-        justify-content: space-between;
+        justify-content:space-between;
         align-items: center;
         background-color: white;
         margin-left: auto;
         margin-right: auto; 
-        width: 1800px; 
+        width: 100%; 
     }
   
 
     &__logo{
 
-        width: 340px;
-        margin-top: 20px;
-        margin-left: 40px;
-      
+        width: 320px; 
+        margin-left: 40px; 
     }
         
     }
@@ -35,7 +32,6 @@
     }
 
 
-
     &__list{
         display: none;
         padding:0;
@@ -43,10 +39,9 @@
         list-style: none;
         background-color: basic.$c-primary-background;
         
-        
 
         @media screen and (min-width: 1000px) {
-            margin:20px 200px;
+            margin-right: 40px;
             display: flex;
             background-color: white;
         }
@@ -64,9 +59,9 @@
     &__link{
         display: block;
         text-decoration: none;
-        padding: 10px 20px;
+        padding: 10px 10px;
         color: white;
-        border-radius: 15px;
+        border-radius: 0px;
         font-family: basic.$font-nav;
         font-weight: normal;
         font-size: basic.$size-menu;
@@ -74,6 +69,7 @@
         @media screen and (min-width: 1000px) {
             color: basic.$c-primary-text;
             font-weight: bold;
+            border-radius: 15px;
         }
 
         &:hover{
@@ -99,6 +95,10 @@
     .tog{
         font-weight: bold;
         font-size: 38px;
-        margin-left: 40px;
+        //margin-left: 40px;
+        position: absolute;
+        right: 50px;
+        top: 65px;
+        
     }
 }
