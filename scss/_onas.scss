@@ -4,7 +4,8 @@
 .card-general{
     padding: 40px;
     margin-bottom: 40px;
-    background-color: basic.$c-primary-background;
+   // background-color: basic.$c-primary-background;
+    border: 1px solid silver;
     border-radius: 10px;
     width: 80%;
     margin-left: auto;
@@ -15,8 +16,8 @@
 .card-general__content{
     background-color: white;
     padding: 20px;
-    background-color: basic.$c-primary-background;
-    color: white;
+   // background-color: basic.$c-primary-background;
+    //color: white;
     text-align: center;
 }
 

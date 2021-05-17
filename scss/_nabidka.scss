@@ -1,6 +1,13 @@
 @use "basic";
 
-.grid{
+.kava,
+.dezerty{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.flex-nabidka{
 
     @media screen and (min-width: 680px) {
         display: flex;
@@ -8,59 +15,60 @@
         justify-content: space-between;
 
     }
-  
-    &__item{
+}
+
+.nabidka-item{
         //border: 2px solid silver;
         margin-bottom: 40px;
-        width: 440px;
+        width: 70%;
         margin-left: auto;
         margin-right: auto;
 
+
         @media screen and (min-width: 680px) {
             flex: 0 0 calc((100% - 40px) / 2);
-            
+            max-width: 50%;
         }
 
         @media screen and (min-width: 1000px) {
             flex: 0 0 calc((100% - 100px) / 4);
-           
+            max-width: 80%;
         }
         
-    }
+    
 
-  
 
-    &__item-img{
+    &__img{
         display: block;
         width: 100%;
-        height: 500px;
+        height: 460px;
 
         @media screen and (min-width: 680px) {
-           
+           height: 460px;
             
         }
 
         @media screen and (min-width: 1000px) {
-            height: 400px;
+            height: 460px;
             width: 100%;
            
         }
     }
 
-    &__item-content{
+    &__content{
         padding: 20px;
         text-align: center;
         background-color: basic.$c-primary-background;
         color: white;
-        height: 260px;
+        height: auto;
 
         @media screen and (min-width: 680px) {
-            
-        }
+            height: 160px;
+             
+         }
 
-        @media screen and (min-width: 1000px) {
+         @media screen and (min-width: 1000px) {
             height: 240px;
-            width: 100%;
            
         }
 
@@ -68,18 +76,10 @@
     }
 
    
-}
 
 
 
-
-.kava,
-.dezerty{
-    width: 1400px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
+/*
 .button{
     display: inline-block;
     padding: 10px 20px;
@@ -93,4 +93,5 @@
     &:hover{
         background-color: #D19C1D;
     }
+*/
 }

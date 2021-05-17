@@ -151,7 +151,7 @@ PC      960px a víc
 .card-general {
   padding: 40px;
   margin-bottom: 40px;
-  background-color: #2F2D2E;
+  border: 1px solid silver;
   border-radius: 10px;
   width: 80%;
   margin-left: auto;
@@ -161,8 +161,6 @@ PC      960px a víc
 .card-general__content {
   background-color: white;
   padding: 20px;
-  background-color: #2F2D2E;
-  color: white;
   text-align: center;
 }
 
@@ -208,73 +206,86 @@ PC      960px a víc
     margin-right: auto;
   }
 }
+.kava,
+.dezerty {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 @media screen and (min-width: 680px) {
-  .grid {
+  .flex-nabidka {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
   }
 }
-.grid__item {
+
+.nabidka-item {
   margin-bottom: 40px;
-  width: 440px;
+  width: 70%;
   margin-left: auto;
   margin-right: auto;
+  /*
+  .button{
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: basic.$c-button;
+      color: basic.$c-primary-text;
+      font-family: basic.$font-nav;
+      font-weight: bold;
+      text-decoration: none; 
+      border-radius: 5px;
+
+      &:hover{
+          background-color: #D19C1D;
+      }
+  */
 }
 @media screen and (min-width: 680px) {
-  .grid__item {
+  .nabidka-item {
     flex: 0 0 calc((100% - 40px) / 2);
+    max-width: 50%;
   }
 }
 @media screen and (min-width: 1000px) {
-  .grid__item {
+  .nabidka-item {
     flex: 0 0 calc((100% - 100px) / 4);
+    max-width: 80%;
   }
 }
-.grid__item-img {
+.nabidka-item__img {
   display: block;
   width: 100%;
-  height: 500px;
+  height: 460px;
+}
+@media screen and (min-width: 680px) {
+  .nabidka-item__img {
+    height: 460px;
+  }
 }
 @media screen and (min-width: 1000px) {
-  .grid__item-img {
-    height: 400px;
+  .nabidka-item__img {
+    height: 460px;
     width: 100%;
   }
 }
-.grid__item-content {
+.nabidka-item__content {
   padding: 20px;
   text-align: center;
   background-color: #2F2D2E;
   color: white;
-  height: 260px;
+  height: auto;
 }
-@media screen and (min-width: 1000px) {
-  .grid__item-content {
-    height: 240px;
-    width: 100%;
+@media screen and (min-width: 680px) {
+  .nabidka-item__content {
+    height: 160px;
   }
 }
-
-.kava,
-.dezerty {
-  width: 1400px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.button {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: white;
-  color: #242424;
-  font-family: "Poppins", sans-serif;
-  font-weight: bold;
-  text-decoration: none;
-  border-radius: 5px;
-}
-.button:hover {
-  background-color: #D19C1D;
+@media screen and (min-width: 1000px) {
+  .nabidka-item__content {
+    height: 240px;
+  }
 }
 
 html {
@@ -303,7 +314,7 @@ h1 {
 }
 
 h2 {
-  font-size: 26px;
+  font-size: 24px;
   font-family: "Gentium Book Basic", serif;
   margin-top: 0;
 }
@@ -311,6 +322,7 @@ h2 {
 h3 {
   font-size: 22px;
   font-family: "Gentium Book Basic", serif;
+  margin: 0;
 }
 
 a {
@@ -324,15 +336,9 @@ section {
 /*=========section homepage-about"==========*/
 @media screen and (min-width: 1000px) {
   .homepage-about {
-    width: 1400px;
+    width: 90%;
     margin-left: auto;
     margin-right: auto;
-  }
-}
-
-@media screen and (max-width: 999px) {
-  .glide {
-    display: none;
   }
 }
 
@@ -379,30 +385,53 @@ section {
 /*=========section homepage-akce"==========*/
 @media screen and (min-width: 1000px) {
   .homepage-akce {
-    width: 1400px;
+    width: 90%;
     margin-left: auto;
     margin-right: auto;
   }
 }
 
 .glide {
-  background-color: #2F2D2E;
+  box-shadow: 1px 2px 3px #808080;
+  max-width: 60%;
+  max-height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 1000px) {
+  .glide {
+    max-width: 40%;
+  }
 }
 
-.card-slider {
-  padding: 40px;
-  border-radius: 6px;
-  background-color: white;
-  margin: 40px;
-}
-
-.card-slider__content {
-  padding: 60px 100px 20px 100px;
+.glide__slides {
+  margin: 0;
 }
 
 .glide__slide img {
-  width: 500px;
+  width: 100%;
   border-radius: 5px;
-  display: block;
-  margin: 0 auto;
+}
+@media screen and (min-width: 1000px) {
+  .glide__slide img {
+    width: 86%;
+  }
+}
+
+.card-slider__title {
+  font-size: 22px;
+  font-family: "Gentium Book Basic", serif;
+  padding-top: 20px;
+  font-weight: bold;
+}
+
+.card-slider__content {
+  padding: 40px 60px;
+  text-align: center;
+}
+
+.glide__arrow {
+  color: black;
+  fill: black;
+  background-color: black;
 }/*# sourceMappingURL=style.css.map */

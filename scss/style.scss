@@ -39,6 +39,7 @@ h2{
 h3{
     font-size: basic.$size-title3;
     font-family: basic.$font-special; 
+    margin: 0;
 }
 
 a{
@@ -57,18 +58,14 @@ section{
 .homepage-about{
 
     @media screen and (min-width: 1000px) {
-    width: 1400px;
+    width: 90%;
     margin-left: auto;
     margin-right: auto;
        
     }
 }
 
-.glide{
-    @media screen and (max-width: 999px){
-    display: none;
-    }
-}
+
 
 .card-grid{
 
@@ -122,44 +119,67 @@ section{
     } 
 
 
+
 /*=========section homepage-akce"==========*/
 .homepage-akce{
 
     @media screen and (min-width: 1000px) {
-        width: 1400px;
+        width: 90%;
         margin-left: auto;
         margin-right: auto;
         }
     }
 
 .glide{
-    background-color: basic.$c-primary-background;
+    box-shadow: 1px 2px 3px #808080;
+    max-width: 60%;
+    max-height: auto;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media screen and (min-width: 1000px) {
+        max-width: 40%;
+    }
 
 }
 
-.card-slider{
-    
-    padding: 40px;
-    border-radius: 6px;
-    background-color: white;
-    margin: 40px;
-    
-}
 
-.card-slider__content{
-    padding:60px 100px 20px 100px;
+.glide__slides{
+    margin: 0;
 }
-
 
 
 .glide__slide img{
     
-    width: 500px;
+    width: 100%;
     border-radius: 5px;
-    display: block;
-    margin: 0 auto;
 
+    @media screen and (min-width: 1000px) {
+        width: 86%;
+    }
 }
+
+.card-slider__title{
+        font-size: basic.$size-title3;
+        font-family: basic.$font-special; 
+        padding-top: 20px;
+        font-weight: bold;
+    }
+    
+
+.card-slider__content{
+    padding:40px 60px;
+    text-align: center;
+}
+
+.glide__arrow{
+    color: black;
+    fill: black;
+    background-color: black;
+}
+
+
+
 
 
 
