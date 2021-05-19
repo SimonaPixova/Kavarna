@@ -288,6 +288,25 @@ PC      960px a víc
   }
 }
 
+.fotogalerie-kavarna,
+.fotogalerie-zakaznik {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 100px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.grid img {
+  width: 100%;
+  border-radius: 2px;
+}
+
 html {
   box-sizing: border-box;
 }
