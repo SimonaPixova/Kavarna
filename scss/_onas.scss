@@ -7,10 +7,11 @@
    // background-color: basic.$c-primary-background;
     border: 1px solid silver;
     border-radius: 10px;
+    box-shadow: 1px 2px 2px #dbdbdb;
     width: 80%;
     margin-left: auto;
     margin-right: auto;
-    //box-shadow: 1px 2px 2px #dbdbdb;
+
 }
 
 .card-general__content{
@@ -24,17 +25,18 @@
 .card-general__images img{
     display: block;
     margin: 0 auto;
-    max-width: 80%;
+    max-width: 100%;
     border-radius: 10px;
+    object-fit: cover;
 }
+
+
 
 @media screen and(min-width: 1000px){
     .card-general{
-        border: 1px solid silver;
         display:flex;
-        background-color: white;
         align-items: center;
-        width: 100%;
+        //width: 90%;
     }
 
     .card-general__content{
@@ -56,6 +58,17 @@
         margin: 0;
         border-radius: 10px;
     }
+
+    .card-general__images--right{
+        order:2;
+    }
+
+    .card-general__content--right{
+        order: 1;
+        margin-left: 0;
+        margin-right: 40px;
+    }
+
 
     .about-content{
         width: 90%;

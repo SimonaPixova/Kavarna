@@ -5,6 +5,7 @@
 @use "onas";
 @use "nabidka";
 @use "fotogalerie";
+@use "akce";
 
 
 html { box-sizing: border-box; }
@@ -26,7 +27,7 @@ h1{
     font-family: basic.$font-title;//basic.$font-special;
     text-align: center;
     margin-top: 0;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 
 }
 
@@ -49,7 +50,7 @@ a{
 }
 
 section{
-    margin-bottom: 50px;
+    margin-bottom:80px;
 }
 
 
@@ -105,7 +106,7 @@ section{
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
     justify-items: center;//nefunguje
-    padding: 60px;
+    //padding: 60px;
     //background-color: basic.$c-primary-background; 
     //color: white;
     }
