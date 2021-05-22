@@ -1,0 +1,123 @@
+@use "basic";
+
+.kontakt-formular,
+.kontakt-cards{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+//FORMULÁŘ
+
+.title-kontaktni-formular{
+    margin-bottom: 18px;
+    text-align: center;
+}
+
+
+
+.form-field{
+	margin-bottom: 20px;
+
+    @media screen and (min-width: 1200px){
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }  
+}
+
+.form-field > label{
+	display: block;
+	font-size: basic.$size-default;
+	color: grey;  
+}
+
+.form-field input[type="text"],
+.form-field input[type="email"],
+.form-field textarea{
+	width: 100%;
+	border: 1px solid silver;
+	border-radius: 4px;
+	font-size: basic.$size-default;
+	padding: 5px;
+
+   
+}
+
+.required{
+	color: tomato;
+}
+
+.button{
+	background-color: basic.$c-button-form;
+	color: white;
+	padding: 10px 20px;
+	border: 0;
+	border-radius: 15px;
+    cursor: pointer;
+}
+
+.button:hover{
+	background-color: basic.$c-button-hoover;
+}
+
+.button-kontejner{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+//SEKCE kontakt-cards
+.phone{
+    margin-bottom: 0;
+}
+
+.card-kontakt{
+
+  
+
+    &__template{
+        border: 1px solid silver;
+        box-shadow: 1px 2px 3px #808080;
+        padding: 20px;
+        margin-bottom: 40px;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+
+        @media screen and (min-width: 800px){
+            min-width: 100%;
+            margin-bottom: 0;
+        }    
+
+        @media screen and (min-width: 1000px){
+            min-width: 80%;
+        }    
+    }
+
+    &__content{
+        padding: 20px;
+        text-align: center;
+
+        @media screen and (min-width: 800px){
+           padding:20px 0 0 0;
+        }
+    }
+
+    @media screen and (min-width: 800px){
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+
+    }
+
+    @media screen and (min-width: 1200px){
+        margin-right: auto;
+        margin-left: auto;
+        width: 80%;
+    }    
+ 
+
+
+}

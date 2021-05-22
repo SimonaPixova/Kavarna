@@ -328,6 +328,115 @@ PC      960px a víc
   margin-bottom: 100px;
 }
 
+.kontakt-formular,
+.kontakt-cards {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.title-kontaktni-formular {
+  margin-bottom: 18px;
+  text-align: center;
+}
+
+.form-field {
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 1200px) {
+  .form-field {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.form-field > label {
+  display: block;
+  font-size: 16px;
+  color: grey;
+}
+
+.form-field input[type=text],
+.form-field input[type=email],
+.form-field textarea {
+  width: 100%;
+  border: 1px solid silver;
+  border-radius: 4px;
+  font-size: 16px;
+  padding: 5px;
+}
+
+.required {
+  color: tomato;
+}
+
+.button {
+  background-color: #2F2D2E;
+  color: white;
+  padding: 10px 20px;
+  border: 0;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #D19C1D;
+}
+
+.button-kontejner {
+  display: flex;
+  justify-content: center;
+}
+
+.phone {
+  margin-bottom: 0;
+}
+
+.card-kontakt__template {
+  border: 1px solid silver;
+  box-shadow: 1px 2px 3px #808080;
+  padding: 20px;
+  margin-bottom: 40px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 800px) {
+  .card-kontakt__template {
+    min-width: 100%;
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .card-kontakt__template {
+    min-width: 80%;
+  }
+}
+.card-kontakt__content {
+  padding: 20px;
+  text-align: center;
+}
+@media screen and (min-width: 800px) {
+  .card-kontakt__content {
+    padding: 20px 0 0 0;
+  }
+}
+@media screen and (min-width: 800px) {
+  .card-kontakt {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .card-kontakt {
+    margin-right: auto;
+    margin-left: auto;
+    width: 80%;
+  }
+}
+
 html {
   box-sizing: border-box;
 }
@@ -346,7 +455,7 @@ body {
 }
 
 h1 {
-  font-size: 60px;
+  font-size: 56px;
   font-family: "Sacramento", cursive;
   text-align: center;
   margin-top: 0;
@@ -467,10 +576,4 @@ section {
 .card-slider__content {
   padding: 40px 60px;
   text-align: center;
-}
-
-.glide__arrow {
-  color: black;
-  fill: black;
-  background-color: black;
 }/*# sourceMappingURL=style.css.map */

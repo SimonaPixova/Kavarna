@@ -6,6 +6,7 @@
 @use "nabidka";
 @use "fotogalerie";
 @use "akce";
+@use "kontakt";
 
 
 html { box-sizing: border-box; }
@@ -175,11 +176,7 @@ section{
     text-align: center;
 }
 
-.glide__arrow{
-    color: black;
-    fill: black;
-    background-color: black;
-}
+
 
 
 
