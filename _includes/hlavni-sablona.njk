@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kavárna s příběhem</title>
+
+    <script src="https://kit.fontawesome.com/d969cbef24.js" crossorigin="anonymous"></script>
+    
+
+    <!-- Moje CSS -->
+	<link rel="stylesheet" href="/css/style.css">
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Basic:wght@400;700&family=Nunito+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <link href="C:\Users\simon\OneDrive\HTML a CSS\fontawesome-free-5.15.3-web\fontawesome-free-5.15.3-web\css\all.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">   
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montez&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+
+    <!-- Glide -->
+    <link rel="stylesheet" href="/css/glide.core.min.css">
+	<link rel="stylesheet" href="/css/glide.theme.min.css">
+
+</head>
+
+<body>
+
+    <header class="header">
+        <img class="header__logo" src="/images/Logo_new.svg" alt="logo kavárny">
+
+        <nav class="menu">
+            <input type="checkbox" class="menu__checkbox" id="menu-checkbox">
+
+            <label for="menu-checkbox" class="menu__toggler"><span class="tog">☰</span></label>
+
+            <ul class="menu__list">
+                <li class="menu__item"><a href="/" class="menu__link">HOME</a></li>
+                <li class="menu__item"><a href="/onas" class="menu__link">O NÁS</a></li>
+                <li class="menu__item"><a href="/nabidka" class="menu__link">NABÍDKA</a></li>
+                <li class="menu__item"><a href="/fotogalerie" class="menu__link">FOTOGALERIE</a></li>
+                <li class="menu__item"><a href="/akce" class="menu__link">AKCE</a></li>
+                <li class="menu__item"><a href="/kontakt" class="menu__link">KONTAKT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+
+        {{ content | safe }} 
+
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer__grid">
+            <div class="footer__grid-column">
+                <h3>Otevírací doba</h3>
+                <p>
+                    Po - Pá: 7:00 - 22:00<br>
+                    So - Ne: 9:00 - 23:00
+                </p>
+            </div>
+            <div class="footer__grid-column">
+                <h3>Adresa</h3>
+                <p>
+                    Pražská 1 <br>
+                    Praha 1, 110 00<br>
+                  
+                </p>
+            </div>
+            <div class="footer__grid-column">
+                <h3>Kontakt</h3>
+                <p>
+                    +420 732 000 000<br>
+                    <a href="mailto:kavarna@spribehem.cz">kavárna@spribehem.cz</a>
+                </p>
+            </div>
+        </div>
+
+            <div class="footer__copyright">
+                &copy;2021, SPIX
+            </div>
+        
+    </footer>
+    
+
+
+
+
+</body>
+</html>
