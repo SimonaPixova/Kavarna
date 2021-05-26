@@ -44,12 +44,12 @@
             <label for="menu-checkbox" class="menu__toggler"><span class="tog">☰</span></label>
 
             <ul class="menu__list">
-                <li class="menu__item"><a href="/" class="menu__link">HOME</a></li>
-                <li class="menu__item"><a href="/onas" class="menu__link">O NÁS</a></li>
-                <li class="menu__item"><a href="/nabidka" class="menu__link">NABÍDKA</a></li>
-                <li class="menu__item"><a href="/fotogalerie" class="menu__link">FOTOGALERIE</a></li>
-                <li class="menu__item"><a href="/akce" class="menu__link">AKCE</a></li>
-                <li class="menu__item"><a href="/kontakt" class="menu__link">KONTAKT</a></li>
+                <li class="menu__item {{ 'menu__item--active' if page.fileSlug === ''}}"><a href="/" class="menu__link">HOME</a></li>
+                <li class="menu__item {{ 'menu__item--active' if page.fileSlug === 'onas'}}"><a href="/onas" class="menu__link">O NÁS</a></li>
+                <li class="menu__item {{ 'menu__item--active' if page.fileSlug === 'nabidka'}}"><a href="/nabidka" class="menu__link">NABÍDKA</a></li>
+                <li class="menu__item {{ 'menu__item--active' if page.fileSlug === 'fotogalerie'}}"><a href="/fotogalerie" class="menu__link">FOTOGALERIE</a></li>
+                <li class="menu__item {{ 'menu__item--active' if page.fileSlug === 'akce'}}"><a href="/akce" class="menu__link">AKCE</a></li>
+                <li class="menu__item {{ 'menu__item--active' if page.fileSlug === 'kontakt'}}"><a href="/kontakt" class="menu__link">KONTAKT</a></li>
             </ul>
         </nav>
     </header>

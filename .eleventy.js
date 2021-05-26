@@ -8,7 +8,11 @@ module.exports = function(eleventyConfig) {
 	// Zkopírovat css/ to _site/css/
 	eleventyConfig.addPassthroughCopy("css");
 
+  eleventyConfig.addPassthroughCopy("fslightbox.js");
 
+  eleventyConfig.addPassthroughCopy("fslightbox.min.js");
+
+  eleventyConfig.addPassthroughCopy("glide.min.js");
 
   return {
     // možné formáty šablon

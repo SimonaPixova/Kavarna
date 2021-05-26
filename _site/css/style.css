@@ -69,6 +69,18 @@ PC      960px a víc
   background-color: #D19C1D;
   color: white;
 }
+.menu .menu__item--active .menu__link {
+  color: #D19C1D;
+}
+.menu .menu__item--active .menu__link:hover {
+  color: white;
+}
+@media screen and (min-width: 1000px) {
+  .menu .menu__item--active .menu__link:hover {
+    background-color: #D19C1D;
+    color: white;
+  }
+}
 @media screen and (max-width: 999px) {
   .menu .menu__checkbox:checked ~ .menu__list {
     display: block;
@@ -96,10 +108,12 @@ PC      960px a víc
   background-size: cover;
   background-position: center;
   background-repeat: none;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 @media screen and (min-width: 1000px) {
   .hero__image {
-    height: 480px;
+    height: 460px;
   }
 }
 
@@ -231,6 +245,10 @@ PC      960px a víc
   }
 }
 
+.cena {
+  margin-bottom: 5px;
+}
+
 .nabidka-item {
   margin-bottom: 40px;
   width: 70%;
@@ -273,12 +291,12 @@ PC      960px a víc
 }
 @media screen and (min-width: 680px) {
   .nabidka-item__img {
-    height: 440px;
+    height: 420px;
   }
 }
 @media screen and (min-width: 1000px) {
   .nabidka-item__img {
-    height: 440px;
+    height: 420px;
     width: 100%;
   }
 }
@@ -291,12 +309,12 @@ PC      960px a víc
 }
 @media screen and (min-width: 680px) {
   .nabidka-item__content {
-    height: 240px;
+    height: 200px;
   }
 }
 @media screen and (min-width: 1000px) {
   .nabidka-item__content {
-    height: 240px;
+    height: 260px;
   }
 }
 
@@ -491,6 +509,10 @@ section {
   }
 }
 
+.card-grid__link {
+  color: #242424;
+  text-decoration: none;
+}
 .card-grid__template {
   border: 1px solid silver;
   box-shadow: 1px 2px 3px #808080;

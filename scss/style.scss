@@ -73,6 +73,11 @@ section{
 
 .card-grid{
 
+    &__link{
+        color: basic.$c-primary-text;
+        text-decoration: none;
+    }
+
     &__template{
         border: 1px solid silver;
         box-shadow: 1px 2px 3px #808080;
@@ -96,7 +101,6 @@ section{
     &__content{
         padding: 20px;
         text-align: center;
-    
         
     }
 
