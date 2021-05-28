@@ -14,15 +14,12 @@
         width: 100%; 
     }
   
-
     &__logo{
-
         width: 280px; 
         margin-left: 20px; 
     }
         
-    }
-
+}
 
 
 .menu{
@@ -31,7 +28,6 @@
       left: -9999px; 
     }
 
-
     &__list{
         display: none;
         padding:0;
@@ -39,7 +35,6 @@
         list-style: none;
         background-color: basic.$c-primary-background;
         
-
         @media screen and (min-width: 1000px) {
             margin-right: 40px;
             display: flex;

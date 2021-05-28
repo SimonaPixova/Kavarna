@@ -36,8 +36,7 @@ h2{
     font-size: basic.$size-title2;
     font-family: basic.$font-special; 
     margin-top: 0;
-   
-    
+
 }
 
 h3{
@@ -50,26 +49,19 @@ a{
     color: basic.$c-secondary-text;
 }
 
-section{
+/*section{
     margin-bottom:80px;
 }
-
-
-
+*/
 
 /*=========section homepage-about"==========*/
 
 .homepage-about{
-
-    @media screen and (min-width: 1000px) {
     width: 90%;
     margin-left: auto;
     margin-right: auto;
-       
-    }
+    margin-bottom: 100px;
 }
-
-
 
 .card-grid{
 
@@ -111,9 +103,6 @@ section{
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
     justify-items: center;//nefunguje
-    //padding: 60px;
-    //background-color: basic.$c-primary-background; 
-    //color: white;
     }
 }
 
@@ -131,13 +120,12 @@ section{
 /*=========section homepage-akce"==========*/
 .homepage-akce{
 
-    @media screen and (min-width: 1000px) {
-        width: 90%;
-        margin-left: auto;
-        margin-right: auto;
-        }
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
     }
-
+    
 .glide{
     box-shadow: 1px 2px 3px #808080;
     max-width: 60%;
@@ -149,12 +137,12 @@ section{
         max-width: 40%;
     }
 
+    &__slides{
+        margin: 0;
+    }
+
 }
 
-
-.glide__slides{
-    margin: 0;
-}
 
 
 .glide__slide img{

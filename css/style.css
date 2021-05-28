@@ -1,10 +1,3 @@
-@charset "UTF-8";
-/*
-Breakpointy
-Mobil   0 - 539px
-Tablet  540px - 959px (čti jako 540px a víc)
-PC      960px a víc
-*/
 @media screen and (min-width: 1000px) {
   .header {
     margin-top: 20px;
@@ -102,6 +95,9 @@ PC      960px a víc
   top: 65px;
 }
 
+.hero {
+  margin-bottom: 80px;
+}
 .hero__image {
   width: 100%;
   height: 300px;
@@ -118,27 +114,27 @@ PC      960px a víc
 }
 
 .hero__image--homepage {
-  background-image: url(./../images/hero-homepage.jpg);
+  background-image: url(./../images/hero/hero-homepage.jpg);
 }
 
 .hero__image--hero-onas {
-  background-image: url(./../images/hero-onas.jpg);
+  background-image: url(./../images/hero/hero-onas.jpg);
 }
 
 .hero__image--nabidka {
-  background-image: url(./../images/hero-nabidka.jpg);
+  background-image: url(./../images/hero/hero-nabidka.jpg);
 }
 
 .hero__image--fotogalerie {
-  background-image: url(./../images/hero-fotogalerie2.jpg);
+  background-image: url(./../images/hero/hero-fotogalerie2.jpg);
 }
 
 .hero__image--akce {
-  background-image: url(./../images/hero-akce.jpg);
+  background-image: url(./../images/hero/hero-akce.jpg);
 }
 
 .hero__image--kontakt {
-  background-image: url(./../images/hero-kontakt.jpg);
+  background-image: url(./../images/hero/hero-kontakt.jpg);
 }
 
 .footer__grid {
@@ -162,23 +158,60 @@ PC      960px a víc
   padding: 15px;
 }
 
+.about-content {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 100px;
+}
+
 .card-general {
   padding: 40px;
   margin-bottom: 40px;
-  border: 1px solid silver;
-  border-radius: 10px;
-  box-shadow: 1px 2px 2px #dbdbdb;
   width: 80%;
   margin-left: auto;
   margin-right: auto;
+  border: 1px solid silver;
+  border-radius: 10px;
+  box-shadow: 1px 2px 2px #dbdbdb;
 }
-
+@media screen and (min-width: 1000px) {
+  .card-general {
+    display: flex;
+    align-items: center;
+  }
+}
 .card-general__content {
   background-color: white;
   padding: 20px;
   text-align: center;
 }
-
+@media screen and (min-width: 1000px) {
+  .card-general__content {
+    background-color: white;
+    color: #242424;
+    text-align: left;
+    margin-left: 40px;
+    padding: 0;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .card-general__content--right {
+    order: 1;
+    margin-left: 0;
+    margin-right: 40px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .card-general__images {
+    min-width: 40%;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .card-general__images--right {
+    order: 2;
+  }
+}
 .card-general__images img {
   display: block;
   margin: 0 auto;
@@ -188,53 +221,12 @@ PC      960px a víc
      object-fit: cover;
 }
 
-@media screen and (min-width: 1000px) {
-  .card-general {
-    display: flex;
-    align-items: center;
-  }
-
-  .card-general__content {
-    background-color: white;
-    color: #242424;
-    text-align: left;
-    margin-left: 40px;
-    padding: 0;
-  }
-
-  .card-general__images {
-    min-width: 40%;
-  }
-
-  .card-general__images img {
-    display: block;
-    margin: 0 auto;
-    max-width: 100%;
-    margin: 0;
-    border-radius: 10px;
-  }
-
-  .card-general__images--right {
-    order: 2;
-  }
-
-  .card-general__content--right {
-    order: 1;
-    margin-left: 0;
-    margin-right: 40px;
-  }
-
-  .about-content {
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
 .kava,
 .dezerty {
   width: 90%;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 100px;
 }
 
 @media screen and (min-width: 680px) {
@@ -254,21 +246,6 @@ PC      960px a víc
   width: 70%;
   margin-left: auto;
   margin-right: auto;
-  /*
-  .button{
-      display: inline-block;
-      padding: 10px 20px;
-      background-color: basic.$c-button;
-      color: basic.$c-primary-text;
-      font-family: basic.$font-nav;
-      font-weight: bold;
-      text-decoration: none; 
-      border-radius: 5px;
-
-      &:hover{
-          background-color: #D19C1D;
-      }
-  */
 }
 @media screen and (min-width: 680px) {
   .nabidka-item {
@@ -315,6 +292,7 @@ PC      960px a víc
 @media screen and (min-width: 1000px) {
   .nabidka-item__content {
     height: 260px;
+    padding-top: 36px;
   }
 }
 
@@ -323,6 +301,7 @@ PC      960px a víc
   width: 90%;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 100px;
 }
 
 .grid {
@@ -351,6 +330,7 @@ PC      960px a víc
   width: 80%;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 100px;
 }
 
 .title-kontaktni-formular {
@@ -496,17 +476,16 @@ a {
   color: #D19C1D;
 }
 
-section {
-  margin-bottom: 80px;
+/*section{
+    margin-bottom:80px;
 }
-
+*/
 /*=========section homepage-about"==========*/
-@media screen and (min-width: 1000px) {
-  .homepage-about {
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-  }
+.homepage-about {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 100px;
 }
 
 .card-grid__link {
@@ -553,12 +532,11 @@ section {
 }
 
 /*=========section homepage-akce"==========*/
-@media screen and (min-width: 1000px) {
-  .homepage-akce {
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-  }
+.homepage-akce {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 100px;
 }
 
 .glide {
@@ -573,7 +551,6 @@ section {
     max-width: 40%;
   }
 }
-
 .glide__slides {
   margin: 0;
 }

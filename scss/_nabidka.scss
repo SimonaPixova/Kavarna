@@ -5,6 +5,7 @@
     width: 90%;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 100px;
 }
 
 .flex-nabidka{
@@ -13,7 +14,6 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-
     }
 }
 
@@ -38,8 +38,6 @@
             flex: 0 0 calc((100% - 100px) / 4);
             max-width: 80%;
         }
-        
-    
 
 
     &__img{
@@ -56,8 +54,7 @@
 
         @media screen and (min-width: 1000px) {
             height: 420px;
-            width: 100%;
-           
+            width: 100%;       
         }
     }
 
@@ -75,28 +72,9 @@
 
          @media screen and (min-width: 1000px) {
             height: 260px;
+            padding-top: 36px;
            
         }
-
-        
     }
 
-
-
-
-/*
-.button{
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: basic.$c-button;
-    color: basic.$c-primary-text;
-    font-family: basic.$font-nav;
-    font-weight: bold;
-    text-decoration: none; 
-    border-radius: 5px;
-
-    &:hover{
-        background-color: #D19C1D;
-    }
-*/
 }

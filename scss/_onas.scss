@@ -1,79 +1,78 @@
 @use "basic";
 
+//POZOR změna v card-general ovlivňuje i stránku akce!!!
+
+.about-content{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+}
+
 
 .card-general{
     padding: 40px;
     margin-bottom: 40px;
-   // background-color: basic.$c-primary-background;
-    border: 1px solid silver;
-    border-radius: 10px;
-    box-shadow: 1px 2px 2px #dbdbdb;
     width: 80%;
     margin-left: auto;
     margin-right: auto;
-
-}
-
-.card-general__content{
-    background-color: white;
-    padding: 20px;
-   // background-color: basic.$c-primary-background;
-    //color: white;
-    text-align: center;
-}
-
-.card-general__images img{
-    display: block;
-    margin: 0 auto;
-    max-width: 100%;
+    border: 1px solid silver;
     border-radius: 10px;
-    object-fit: cover;
-}
+    box-shadow: 1px 2px 2px #dbdbdb;
 
-
-
-@media screen and(min-width: 1000px){
-    .card-general{
-        display:flex;
-        align-items: center;
-        //width: 90%;
-    }
-
-    .card-general__content{
+    @media screen and(min-width: 1000px){          
+            display:flex;
+            align-items: center;
+            //width: 90%;
+        }
+    
+    &__content{
         background-color: white;
-        color: basic.$c-primary-text;
-        text-align: left;
-        margin-left: 40px;
-        padding: 0;   
+        padding: 20px;
+        text-align: center;
+
+        @media screen and(min-width: 1000px){
+            background-color: white;
+            color: basic.$c-primary-text;
+            text-align: left;
+            margin-left: 40px;
+            padding: 0;   
+        }
     }
 
-    .card-general__images{
-       min-width: 40%;   
+    &__content--right{
+        @media screen and(min-width: 1000px){
+            order: 1;
+            margin-left: 0;
+            margin-right: 40px;
+        }
+
     }
 
-    .card-general__images img{
+    &__images{
+        @media screen and(min-width: 1000px){
+            min-width: 40%;   
+        }
+    }
+
+    &__images--right{
+        @media screen and(min-width: 1000px){
+            order:2;
+        }
+
+    }
+
+    &__images img{
         display: block;
         margin: 0 auto;
         max-width: 100%;
-        margin: 0;
         border-radius: 10px;
+        object-fit: cover;
+
     }
 
-    .card-general__images--right{
-        order:2;
-    }
-
-    .card-general__content--right{
-        order: 1;
-        margin-left: 0;
-        margin-right: 40px;
-    }
-
-
-    .about-content{
-        width: 90%;
-        margin-left: auto;
-        margin-right: auto;
-    }
 }
+
+
+
 

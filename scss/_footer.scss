@@ -2,7 +2,6 @@
 
 .footer{
 
-
     &__grid{
         display: grid;
         //display: flex;
@@ -14,28 +13,19 @@
         background-color: basic.$c-primary-background; 
         color: white;
         justify-items: center;
-
     }
-
-  
 
     &__grid-column{
         grid-column: span 1;
-    
     }
 
     &__copyright{
-
         color:basic.$c-secondary-text;
         font-size: 16px;
         font-weight: bold;
         text-align: center;
         padding: 15px; 
-
     }
-
-
-
 }
 
    
