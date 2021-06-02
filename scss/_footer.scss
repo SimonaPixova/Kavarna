@@ -2,21 +2,36 @@
 
 .footer{
 
+    
     &__grid{
-        display: grid;
+        
         //display: flex;
         //justify-content: space-around;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 10px;
-        justify-items: center;
+        
         padding: 40px;
         background-color: basic.$c-primary-background; 
         color: white;
-        justify-items: center;
+        text-align: center;
+        
+        
+        @media screen and (min-width: 680px){
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            justify-items: center;
+            justify-items: center;
+
+        }
+
+
     }
 
     &__grid-column{
-        grid-column: span 1;
+        margin-bottom: 20px;
+        @media screen and (min-width: 680px){
+            grid-column: span 1;
+            margin-bottom: 0;
+            }
     }
 
     &__copyright{
